@@ -59,3 +59,31 @@ for($i = 0;$i < sizeof($my_list); $i++) {
 foreach ($my_list as $item) {
   echo $item . "\n";
 }
+
+// Functions
+
+function print_name() {
+  echo "Abdiel" . "\n";
+}
+
+print_name();
+
+function sum_number(int $num1, int $num2) {
+  return $num1 + $num2;
+}
+
+echo sum_number(3, 4) . "\n";
+
+// classes
+
+class MyClass {
+  public $name;
+  public $age;
+  function __construct($name, $age) {
+    $this->name = $name;
+    $this->age = $age;
+  }
+}
+
+$my_class = new MyClass("Abdiel", 4);
+print_r($my_class);
