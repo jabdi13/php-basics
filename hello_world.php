@@ -30,3 +30,32 @@ echo "El valor de mi new string es $new_string\n";
 // Constants
 const MY_CONSTANT = "Constant value";
 echo MY_CONSTANT . "\n";
+
+// Lists Arrays
+$my_list = ["Text 1", "Text 2", "Text 3"];
+echo $my_list[0] . "\n";
+
+array_push($my_list, "New value");
+
+print_r($my_list);
+
+// Dictionary
+
+$my_object = array("name" => "Abdiel", "last_name" => "Ortega", "age" => 27);
+echo gettype($my_object) . "\n";
+print_r($my_object);
+
+// Remove repeated values
+array_unique($my_list);
+
+for($i = 0;$i <= 10; $i++) {
+  echo $i . "\n";
+}
+
+for($i = 0;$i < sizeof($my_list); $i++) {
+  echo $my_list[$i] . "\n";
+}
+
+foreach ($my_list as $item) {
+  echo $item . "\n";
+}
